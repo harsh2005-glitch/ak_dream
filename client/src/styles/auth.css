@@ -1,0 +1,212 @@
+/* ==================================
+   Authentication Pages Styling (Login/Register)
+===================================== */
+
+/* Reusing some root variables for consistency */
+:root {
+    --primary-green: #28a745;
+    --white-color: #ffffff;
+    --light-grey: #f8f9fa;
+    --text-color: #555;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: url('../assets/images/auth-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Adds a semi-transparent overlay to make text more readable */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.auth-container {
+    position: relative; /* To be on top of the overlay */
+    z-index: 1;
+}
+
+.auth-card {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.auth-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.auth-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.auth-subtitle {
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-green);
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top-right-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-register {
+    background-color: #dc3545; /* Red color */
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ==================================
+   New Styles for Registration Page
+===================================== */
+
+.registration-card {
+    width: 1000px;
+    max-width: 95%;
+    text-align: left;
+}
+
+.registration-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-section {
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.personal-section { background-color: #fde8eb; }
+.bank-section { background-color: #fff9e6; }
+.sponsor-section { border: 1px solid #ddd; }
+
+.form-section legend {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1; /* Each input group takes up equal space */
+}
+
+/* Modifier for address field to take more space */
+.input-group.full-width {
+    flex: 2; /* Takes up twice the space of a normal input */
+}
+
+.sponsor-row {
+    align-items: flex-end; /* Aligns items to the bottom */
+}
+
+.check-sponsor-btn {
+    padding: 12px 20px;
+    background-color: #343a40; /* Dark Grey */
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 47px; /* Match height of input fields */
+}
+
+.submit-btn {
+    background-color: #00b0f0; /* Bright Blue */
+    font-size: 1.2rem;
+    padding: 18px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0099d1;
+}
+
+.btn-login-alt {
+    background-color: #ffc107; /* Amber/Yellow color */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
