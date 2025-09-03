@@ -1,8 +1,8 @@
 /* main styles */ 
 /* === CSS Variables (Root) === */
 :root {
-    --primary-green: #28a745;
-    --dark-grey: #343a40;
+    --primary-green: #41bb6a;
+    --dark-grey: #527292;
     --white-color: #ffffff;
     --light-grey: #f8f9fa;
     --text-color: #555;
@@ -61,11 +61,13 @@ ul {
     align-items: center;
     padding: 15px 5%;
     background-color: var(--white-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .logo img {
-    max-height: 50px; /* Adjust size as needed */
+    max-height: 70px;
+    max-width: 70px; /* Adjust size as needed */
 }
 
 .nav-links {
@@ -75,11 +77,28 @@ ul {
 
 .nav-links a {
     font-weight: 500;
+    position: relative;
+    padding: 8px 0;
     transition: color 0.3s ease;
+}
+
+/* Create a pseudo-element for a cool underline hover effect */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-green);
+    transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--primary-green);
+}
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-buttons .btn {
@@ -128,7 +147,7 @@ ul {
 }
 
 .hero-content {
-    background-color: rgba(2, 27, 75, 0.8); /* A dark blue with 80% opacity */
+    /* background-color: rgba(2, 27, 75, 0.8); A dark blue with 80% opacity */
     color: var(--white-color);
     padding: 40px;
     border-radius: 8px;
