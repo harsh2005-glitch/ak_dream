@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects Gallery - Sun Shine Solar Energy</title>
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <!-- Link to the Lightbox2 CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY99L4RLGW3EClarS91Cza6WSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- === Re-used Header from index.html === -->
+    <header id="main-header">
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>sunshinesolar@gmail.com</span> | <span>+6306693936</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="../src/assets/images/logo.png" alt="Sun Shine Solar Energy Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Project Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="./announcements.html">Announcement</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-enquiry">GET A ENQUIRY</a>
+                <a href="login.html" class="btn btn-login">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === Gallery Section === -->
+        <section class="gallery-section">
+            <h2 class="section-title">Our Project Gallery</h2>
+            <div class="title-underline"></div>
+            
+            <!-- Filter Buttons -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-category="all">All Projects</button>
+                <button class="filter-btn" data-category="residential">Residential</button>
+                <button class="filter-btn" data-category="commercial">Commercial</button>
+                <button class="filter-btn" data-category="industrial">Industrial</button>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="gallery-grid">
+                <!-- ITEM 1 (Residential) -->
+                <div class="gallery-item" data-category="residential">
+                    <a href="../src/assets/images/gallery/residential-home-1.jpg" data-lightbox="project-gallery" data-title="Modern Residential Rooftop Installation">
+                        <img src="../src/assets/images/gallery/residential-home-1.jpg" alt="Residential Solar Project">
+                        <div class="overlay"><span>View Project</span></div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <a href="../src/assets/images/gallery/residential-home-2.jpg" data-lightbox="project-gallery" data-title="Modern Residential Rooftop Installation">
+                        <img src="../src/assets/images/gallery/residential-home-2.jpg" alt="Residential Solar Project">
+                        <div class="overlay"><span>View Project</span></div>
+                    </a>
+                </div>
+                <!-- ITEM 2 (Commercial) -->
+                <div class="gallery-item" data-category="commercial">
+                    <a href="../src/assets/images/gallery/commercial-roof-1.jpg" data-lightbox="project-gallery" data-title="Large Commercial Business Complex">
+                        <img src="../src/assets/images/gallery/commercial-roof-1.jpg" alt="Commercial Solar Project">
+                        <div class="overlay"><span>View Project</span></div>
+                    </a>
+                </div>
+                 <!-- ITEM 3 (Industrial) -->
+                <div class="gallery-item" data-category="industrial">
+                    <a href="../src/assets/images/gallery/industrial-plant-1.jpg" data-lightbox="project-gallery" data-title="Industrial Factory Power Solution">
+                        <img src="../src/assets/images/gallery/industrial-plant-1.jpg" alt="Industrial Solar Project">
+                        <div class="overlay"><span>View Project</span></div>
+                    </a>
+                </div>
+                <!-- ADD MORE GALLERY ITEMS HERE... -->
+            </div>
+        </section>
+    </main>
+
+    <!-- === Your Footer would go here === -->
+
+    <!-- jQuery (required for Lightbox2) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lightbox2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJClbfjuhAIMJQIvaKYjAD5KYoP/+iMisunYcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Your custom gallery filter script -->
+    <script src="../src/js/gallery.js"></script>
+
+</body>
+</html>
